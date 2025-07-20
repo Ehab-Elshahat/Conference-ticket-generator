@@ -1,0 +1,125 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- css Style File Link -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Form starts -->
+    <div class="container">
+      <!-- Start backgrounds -->
+      <div class="top-line"></div>
+      <div class="bottom-line"></div>
+      <div class="top-circle"></div>
+      <div class="mid-circle"></div>
+      <!-- End backgrounds -->
+      <div class="top-title">
+        <span class="icon"></span>
+        <h3>coding conf</h3>
+      </div>
+      <h1 class="main-title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p class="secure">
+        Secure your spot at next year's biggest coding conference.
+      </p>
+      <form class="generate-ticket-form">
+        <label for="avatar">Upload Avatar</label>
+        <div class="avatar-area">
+          <div class="upload-icon">
+            <img class="uploaded-image" src="./assets/images/icon-upload.svg" alt="upload" >
+          </div>
+          <input type="file" id="avatar" name="avatar" accept=".jpg, .png" />
+          <p class="drag-drop-p">Drag and drop or click to upload</p>
+          <div class="avatar-btns">
+            <button class="remove-image">Remove image</button>
+            <button class="change-image">Change image</button>
+          </div>
+        </div>
+        <div class="note">
+          <img src="./assets/images/icon-info.svg" alt="info">
+          <p>Upload your photo (JPG or PNG, max size:
+    500KB).</p>
+        </div>
+        <label for="name">Full Name</label>
+        <input class="inputhandler" type="text" id="name">
+        <label for="email">Email Address</label>
+        <input class="inputhandler" type="email" id="email" placeholder="example@email.com" >
+
+        <p class="valid-email-msg hide">Please enter a valid email address</p>
+
+        <label for="github">GitHub Username</label>
+        <input class="inputhandler" type="text" id="github" placeholder="@yourusername">
+        <input  class="inputhandler" type="submit" value="Generate My ticket">
+      </form>
+      <div class="generate-ticket">
+        <div class="ticket">
+          <div class="top-title">
+            <span class="icon"></span>
+            <h3>coding conf</h3>
+          </div>
+          <div class="date">
+            <span class="month">Jan</span>
+            <span class="day">31</span>,
+            <span class="year">2025</span>
+            /
+            <span class="city"> Austin, TX</span>
+          </div>
+          <div class="ticket-number">
+            #01609
+          </div>
+          <div class="ticket-img-nam">
+            <img src="./assets/images/image-avatar.jpg" alt="avatar">
+            <div class="nam-github">
+              <h3 class="name">ehab elshahat</h3>
+              <div class="github">
+                <span class="github-icon"></span>
+                <h4 class="github-account">@ehabElshahatMohamed</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+
+   
+
+    <!-- Form ends -->
+
+    <!-- Generated tickets starts -->
+
+   
+    <!-- Generated tickets ends -->
+<!-- 
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
